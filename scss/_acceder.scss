@@ -1,0 +1,123 @@
+@mixin tablet {
+    @media (min-width: 480px) {
+        @content;
+    }
+} 
+@mixin deskop {
+    @media (min-width: 768px) {
+        @content
+    }
+}
+.fondo_contenido_acceder {
+    background-image: url(../img/fondo-inferior.jpg);
+    background-size: cover;
+    height: auto;
+    padding: 20px 15px;
+    .container_fondo_acceder {
+        background-color: #bababa;
+        padding: 20px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 50px auto 0 auto;
+        .titulo_form_acceder {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            display: flex;
+            justify-content: center;
+            h4 {
+                font-size: 20px;
+                font-family: $letra2-font;
+                @include tablet {
+                    font-size: 40px;
+                }
+            }
+        }
+        .email_acceder {
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            input {
+                width: 100%;
+                height: 100%;
+                padding-left: 10px;
+                height: 40px;
+                border-radius: 20px;
+                @include tablet {
+                    height: 60px;
+                    font-size: 20px;
+                } 
+                @include deskop {
+                    font-size: 20px;
+                }
+            }
+        }
+        .contraseña_acceder {
+            input {
+                width: 100%;
+                height: 100%;
+                padding-left: 10px;
+                height: 40px;
+                border-radius: 20px;
+                @include tablet {
+                    height: 60px;
+                    font-size: 20px;
+                }
+                @include deskop {
+                    font-size: 20px;
+                }
+            }
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+        .boton_enviar_acceder {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            button {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background-color: $rosa;
+                @include deskop {
+                    font-family: $letra2-font;
+                    font-size: 30px;
+                }
+            }
+        }
+        .recordar_contra_acceder {
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: black;
+                text-decoration: underline;
+                font-family: $letra1-font;
+                @include tablet {
+                    font-size: 20px;
+                }
+                @include deskop {
+                    font-size: 30px;
+                }
+            }
+        }
+        .registrarse_acceder {
+            grid-column: 1 / 4;
+            grid-row: 6 / 7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+            @include deskop {
+                font-size: 30px;
+                }
+            }
+        }
+        @include deskop {
+            max-width: 700px;
+            max-height: 500px;
+        }
+    }
+}

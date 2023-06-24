@@ -1,0 +1,1171 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Mukta&family=Roboto+Condensed&family=Staatliches&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* fondo header y navegacion ¨*/
+/* fondo header y navegacion ¨*/
+body header {
+  background-image: url(../img/fondo-superior.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 290px;
+  border-bottom: 5px solid #9f9f9f;
+}
+body header .logo_barra a .logotipo_sony {
+  width: 77px;
+  height: 74px;
+}
+body header .titulo {
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  font-size: 30px;
+}
+body header .logo_barra {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+body header .logo_barra img {
+  margin-right: 15px;
+}
+body header .logo_barra input {
+  min-height: 50px;
+  padding-left: 5px;
+  min-width: 205px;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+}
+body header .logo_barra a {
+  color: white;
+}
+body header .menu_acceder_registrarse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+body header .menu_acceder_registrarse .acceder_registrarse {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+body header .menu_acceder_registrarse .acceder_registrarse a {
+  margin-left: 25px;
+  font-size: 22px;
+  color: black;
+  background-color: #d9d9d9;
+  padding: 10px 5px;
+  margin: 30px 0;
+  border-radius: 15px;
+  font-family: "Heebo", sans-serif;
+}
+body header .menu_acceder_registrarse .abrir_menu {
+  font-size: 30px;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #DD046F;
+  color: white;
+  cursor: pointer;
+}
+body header .menu_acceder_registrarse .menu_mobile .menu_mobile_header .cerrar_menu {
+  font-size: 30px;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #DD046F;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+body header .menu_acceder_registrarse .menu_mobile .menu_mobile_header .cerrar_menu {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 215px;
+}
+body header .menu_acceder_registrarse .disabled {
+  display: none;
+}
+body header .menu_acceder_registrarse .menu_mobile {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+body header .menu_acceder_registrarse .disabled {
+  display: none;
+}
+body header .menu_acceder_registrarse .menu_mobile .menu_mobile_nav {
+  position: absolute;
+  background-color: #DD046F;
+  left: 0;
+  top: 290px;
+  right: 0;
+  bottom: auto;
+}
+body header .menu_acceder_registrarse .menu_mobile .menu_mobile_nav .menu_mobile_nav1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+body header .menu_acceder_registrarse .menu_mobile .menu_mobile_nav .menu_mobile_nav1 li {
+  border: 1px solid white;
+}
+body header .menu_acceder_registrarse .menu_mobile .menu_mobile_nav .menu_mobile_nav1 li a {
+  display: block;
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  font-family: "Heebo", sans-serif;
+}
+body header .menu_acceder_registrarse .menu_mobile .disabled {
+  display: none;
+}
+body header .menu_deskop ul {
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+body header .menu_deskop ul li a {
+  background-color: #DD046F;
+  padding: 15px 8px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Heebo", sans-serif;
+}
+body header .menu_acceder_registrarse {
+  display: flex;
+}
+@media (min-width: 768px) {
+  body header .menu_acceder_registrarse {
+    display: none;
+  }
+}
+body header .menu_deskop {
+  display: none;
+}
+@media (min-width: 768px) {
+  body header .menu_deskop {
+    display: flex;
+  }
+}
+body header .logo_barra div a {
+  display: none;
+  background-color: #d9d9d9;
+  color: black;
+  margin-left: 15px;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  body header .logo_barra div a {
+    display: flex;
+  }
+}
+body header .logo_barra .botones_de_acceso_header {
+  display: flex;
+}
+@media (min-width: 768px) {
+  body header .logo_barra {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*logotipo*/
+/*union de logotipo y barra buscadora*/
+/*botones de acceder y registrarse*/
+/*menu para el mobile*/
+/*icono de menu para abrirlo*/
+/*icono de menu para cerrarlo*/
+/*esto sera el contenido principal de la pagina*/
+.fondo_contenido_principal {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 20px 10px;
+}
+@media (min-width: 320px) {
+  .fondo_contenido_principal {
+    height: auto;
+  }
+}
+@media (min-width: 480px) {
+  .fondo_contenido_principal {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_principal {
+    height: auto;
+  }
+}
+.fondo_contenido_principal #conteitemcarrusel {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  min-height: 150px;
+  height: 50vw;
+  max-height: 400px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 253px;
+  max-width: 770px;
+  margin: 0 auto;
+  border: 1px solid white;
+  position: relative;
+}
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel {
+  height: 100%;
+  position: relative;
+}
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel .tarjetacarrusel {
+  background-color: aquamarine;
+  height: 100%;
+}
+.fondo_contenido_principal #conteitemcarrusel .flechascarrusel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fondo_contenido_principal #conteitemcarrusel .flechascarrusel i {
+  padding: 100px 25px;
+  font-size: 30px;
+}
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-1,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-2,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-3,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-4,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-5,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-6,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-7,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-8,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-9,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-10 {
+  width: 100%;
+  height: 100%;
+}
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-1 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-2 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-3 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-4 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-5 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-6 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-7 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-8 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-9 a img,
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel #tarjetacarrusel-10 a img {
+  width: 100%;
+  height: 100%;
+}
+.fondo_contenido_principal #conteitemcarrusel .itemcarrusel div a {
+  color: white;
+}
+
+.fondo_puntos_paginas {
+  width: 100%;
+  background-color: black;
+  min-width: 253px;
+  max-width: 770px;
+  margin: 0 auto;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.fondo_puntos_paginas .titulo_contenido_principal {
+  color: white;
+  text-align: center;
+}
+.fondo_puntos_paginas .puntos_paginas {
+  width: 30%;
+  min-width: 100px;
+  max-width: 132px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.fondo_puntos_paginas .puntos_paginas li a {
+  padding: 5px;
+}
+.fondo_puntos_paginas .puntos_paginas li a i {
+  color: white;
+}
+
+/*esto es para la seccion de juego de luchas*/
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_juego_de_luchas {
+  text-align: center;
+}
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_juego_de_luchas h3 a {
+  display: block;
+  color: white;
+  width: 100%;
+  background-color: #DD046F;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  min-width: 253px;
+  max-width: 770px;
+  margin: 10px auto;
+  font-size: 15px;
+  font-family: "Heebo", sans-serif;
+}
+@media (min-width: 480px) {
+  .seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_juego_de_luchas h3 a {
+    padding: 20px 80px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_juego_de_luchas h3 a {
+    padding: 30px 100px;
+    font-size: 30px;
+  }
+}
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas .contenido_juego_de_luchas {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  width: 100%;
+  max-width: 747px;
+  margin: 0 auto;
+}
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas .contenido_juego_de_luchas a img {
+  width: 130px;
+  height: 75px;
+  margin: 0 5px 10px 0;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .seccion_de_juegos_de_luchas .grid_juego_de_luchas .contenido_juego_de_luchas a img {
+    width: 276px;
+    height: 151px;
+  }
+}
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_ofertas_imperdibles {
+  text-align: center;
+}
+.seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_ofertas_imperdibles h3 a {
+  display: block;
+  color: white;
+  width: 100%;
+  background-image: url(../img/fondo-destacados.jpg);
+  background-size: cover;
+  padding: 10px 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+  min-width: 253px;
+  max-width: 770px;
+  margin: 10px auto;
+  font-size: 15px;
+  font-family: "Heebo", sans-serif;
+}
+@media (min-width: 480px) {
+  .seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_ofertas_imperdibles h3 a {
+    padding: 20px 80px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .seccion_de_juegos_de_luchas .grid_juego_de_luchas .titulo_ofertas_imperdibles h3 a {
+    padding: 30px 100px;
+    font-size: 30px;
+  }
+}
+
+/*este sitio web es para la categoria todos nuestros juegos*/
+.fondo_todos_los_juegos {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 20px 10px;
+}
+.fondo_todos_los_juegos .titulo_todos_los_juegos h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  font-size: 25px;
+}
+@media (min-width: 468px) {
+  .fondo_todos_los_juegos .titulo_todos_los_juegos h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .titulo_todos_los_juegos h2 {
+    font-size: 40px;
+  }
+}
+.fondo_todos_los_juegos .juego_item_grid {
+  width: 95%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion {
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 30% 30%;
+  padding: 2px;
+  padding-right: 4px;
+  column-gap: 5px;
+  border-radius: 10px;
+  max-width: 170px;
+  max-height: 112px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 15% 1fr 1fr;
+    padding: 2px;
+    padding-right: 4px;
+    column-gap: 5px;
+    border-radius: 10px;
+    max-width: 211px;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_imagen {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_imagen img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_imagen {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_titulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_titulo h4 {
+  font-size: 13px;
+  text-align: center;
+  font-family: var(--letra-titulos);
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_titulo h4 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_titulo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_comprar {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 3px;
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_comprar a {
+  color: black;
+  background-color: #DD046F;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_comprar a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_comprar {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_detalles {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding: 3px;
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_detalles a {
+  color: black;
+  background-color: #BABABA;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_detalles a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid .juego_item_decoracion .juego_item_detalles {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
+.fondo_todos_los_juegos .juego_item_grid .juego_item_1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+@media (min-width: 468px) {
+  .fondo_todos_los_juegos .juego_item_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_todos_los_juegos .juego_item_grid {
+    max-width: 1080px;
+  }
+}
+
+/*esta seccion sera para la pagina web de locales*/
+.fondo_contenido_principal_locales {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 20px 10px;
+}
+.fondo_contenido_principal_locales h2 {
+  color: white;
+  text-align: center;
+  margin: 30px auto;
+  font-family: "Mukta", sans-serif;
+}
+.fondo_contenido_principal_locales .fondo_locales {
+  background-color: #3c3c3c;
+  padding: 20px 10px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.fondo_contenido_principal_locales .fondo_locales .titulo_encabezado_locales h3 {
+  color: white;
+  font-family: "Mukta", sans-serif;
+}
+.fondo_contenido_principal_locales .fondo_locales .titulo_encabezado_locales p {
+  color: white;
+  font-family: "Mukta", sans-serif;
+}
+.fondo_contenido_principal_locales .fondo_locales .region_locales {
+  margin: 20px auto;
+}
+.fondo_contenido_principal_locales .fondo_locales .region_locales h3 {
+  color: white;
+  font-family: "Mukta", sans-serif;
+}
+.fondo_contenido_principal_locales .fondo_locales .region_locales input {
+  width: 100%;
+  border-radius: 10px;
+  height: 45px;
+  padding-left: 10px;
+}
+.fondo_contenido_principal_locales .fondo_locales .local_locales {
+  margin: 20px auto;
+}
+.fondo_contenido_principal_locales .fondo_locales .local_locales h3 {
+  color: white;
+  font-family: "Mukta", sans-serif;
+}
+.fondo_contenido_principal_locales .fondo_locales .local_locales input {
+  width: 100%;
+  border-radius: 10px;
+  height: 45px;
+  padding-left: 10px;
+}
+.fondo_contenido_principal_locales .fondo_locales .mapa_locales iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (min-width: 480px) {
+  .fondo_contenido_principal_locales h2 {
+    font-size: 40px;
+  }
+}
+/* En esta seccion tendremos la pagina de juegos mas recomendados*/
+.fondo_contenido_recomendado {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 20px 10px;
+}
+.fondo_contenido_recomendado .container_recomendado {
+  background-color: #9f9f9f;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.fondo_contenido_recomendado .container_recomendado .video_recomendado iframe {
+  width: 100%;
+  height: 80vw;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.fondo_contenido_recomendado .container_recomendado .titulo_recomendado {
+  margin-bottom: 20px;
+}
+.fondo_contenido_recomendado .container_recomendado .titulo_recomendado h3 a {
+  color: white;
+  background-color: #DD046F;
+  padding: 10px 80px;
+  border: 1px solid white;
+  border-radius: 20px;
+  min-width: 253px;
+  max-width: 770px;
+  margin: 10px auto;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  font-family: "Heebo", sans-serif;
+}
+.fondo_contenido_recomendado .container_recomendado .info_recomendada p {
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+
+@media (min-width: 480px) {
+  .titulo_recomendado h3 a {
+    font-size: 25px;
+  }
+  .container_recomendado {
+    max-width: 720px;
+    max-height: auto;
+    margin: 0 auto 30px auto;
+  }
+  .video_recomendado iframe {
+    width: 100%;
+    height: 80vw;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    max-width: 720px;
+    max-height: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .container_recomendado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    max-height: 630px;
+    gap: 20px;
+  }
+  .video_recomendado {
+    grid-column: 1/5;
+    grid-row: 1/5;
+  }
+  .titulo_recomendado {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+  .info_recomendada {
+    grid-column: 5/6;
+    grid-row: 2/5;
+  }
+}
+/* aca escribiremos el codigo para la parte de contactanos */
+.fondo_contenido_contactos {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  height: auto;
+  padding: 20px 15px;
+}
+.fondo_contenido_contactos .container_fondo_contactos {
+  background-color: #bababa;
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.fondo_contenido_contactos .container_fondo_contactos div input {
+  border-radius: 20px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .titulo_form_contactos {
+  color: black;
+  text-align: center;
+  grid-column: 1/7;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .nombre_contactos {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_contactos .container_fondo_contactos .nombre_contactos input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .apellido_contactos {
+  grid-column: 4/7;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_contactos .container_fondo_contactos .apellido_contactos input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .email_contactos {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_contactos .container_fondo_contactos .email_contactos input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .telefono_contactos {
+  grid-column: 4/7;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_contactos .container_fondo_contactos .telefono_contactos input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .textarea_contactos {
+  grid-column: 1/7;
+  grid-row: 4/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_contactos .container_fondo_contactos .textarea_contactos textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.fondo_contenido_contactos .container_fondo_contactos .boton_enviar_contactos {
+  grid-column: 3/5;
+  grid-row: 7/8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_contactos .container_fondo_contactos .boton_enviar_contactos button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+@media (min-width: 480px) {
+  .titulo_form_contactos {
+    font-size: 30px;
+  }
+  .container_fondo_contactos div input {
+    height: 60px;
+    font-size: 20px;
+  }
+  .textarea_contactos textarea,
+  .boton_enviar_contactos button {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .container_fondo_contactos {
+    max-width: 682px;
+    margin: 0 auto;
+  }
+  .titulo_form_contactos {
+    font-size: 40px;
+  }
+}
+/* aca vamos a poner la seccion de acceder de la pagina web*/
+.fondo_contenido_acceder {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  height: auto;
+  padding: 20px 15px;
+}
+.fondo_contenido_acceder .container_fondo_acceder {
+  background-color: #bababa;
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 50px auto 0 auto;
+}
+.fondo_contenido_acceder .container_fondo_acceder .titulo_form_acceder {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+}
+.fondo_contenido_acceder .container_fondo_acceder .titulo_form_acceder h4 {
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_acceder .container_fondo_acceder .titulo_form_acceder h4 {
+    font-size: 40px;
+  }
+}
+.fondo_contenido_acceder .container_fondo_acceder .email_acceder {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+.fondo_contenido_acceder .container_fondo_acceder .email_acceder input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_acceder .container_fondo_acceder .email_acceder input {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_acceder .container_fondo_acceder .email_acceder input {
+    font-size: 20px;
+  }
+}
+.fondo_contenido_acceder .container_fondo_acceder .contraseña_acceder {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+.fondo_contenido_acceder .container_fondo_acceder .contraseña_acceder input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_acceder .container_fondo_acceder .contraseña_acceder input {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_acceder .container_fondo_acceder .contraseña_acceder input {
+    font-size: 20px;
+  }
+}
+.fondo_contenido_acceder .container_fondo_acceder .boton_enviar_acceder {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.fondo_contenido_acceder .container_fondo_acceder .boton_enviar_acceder button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #DD046F;
+}
+@media (min-width: 768px) {
+  .fondo_contenido_acceder .container_fondo_acceder .boton_enviar_acceder button {
+    font-family: "Mukta", sans-serif;
+    font-size: 30px;
+  }
+}
+.fondo_contenido_acceder .container_fondo_acceder .recordar_contra_acceder {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_contenido_acceder .container_fondo_acceder .recordar_contra_acceder a {
+  color: black;
+  text-decoration: underline;
+  font-family: "Heebo", sans-serif;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_acceder .container_fondo_acceder .recordar_contra_acceder a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_acceder .container_fondo_acceder .recordar_contra_acceder a {
+    font-size: 30px;
+  }
+}
+.fondo_contenido_acceder .container_fondo_acceder .registrarse_acceder {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .fondo_contenido_acceder .container_fondo_acceder .registrarse_acceder a {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_acceder .container_fondo_acceder {
+    max-width: 700px;
+    max-height: 500px;
+  }
+}
+
+/* aca sera la pagina de registro de usuario */
+.fondo_contenido_registrarse {
+  background-image: url(../img/fondo-inferior.jpg);
+  background-size: cover;
+  height: auto;
+  padding: 20px 15px;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse {
+  background-color: #bababa;
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 50px auto 0 auto;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .titulo_form_registrarse {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .titulo_form_registrarse h4 {
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .titulo_form_registrarse h4 {
+    font-size: 40px;
+  }
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .nombre_completo_registrarse {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .nombre_completo_registrarse input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .nombre_completo_registrarse input {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .nombre_completo_registrarse input {
+    height: 70px;
+    font-size: 20px;
+  }
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .email_registrarse {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .email_registrarse input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .email_registrarse input {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .email_registrarse input {
+    height: 70px;
+    font-size: 20px;
+  }
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .contraseña_registrarse {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .contraseña_registrarse input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .contraseña_registrarse input {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse .contraseña_registrarse input {
+    height: 70px;
+    font-size: 20px;
+  }
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .boton_enviar_registrarse {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.fondo_contenido_registrarse .container_fondo_registrarse .boton_enviar_registrarse button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #DD046F;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .fondo_contenido_registrarse .container_fondo_registrarse {
+    max-width: 700px;
+    max-height: 500px;
+  }
+}
+
+/*footer ------------------*/
+footer .fondo_footer {
+  background-color: #4d4d4d;
+}
+footer .fondo_footer .iconos_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 530px;
+  margin: 0 auto;
+}
+footer .fondo_footer .iconos_footer li a .bi {
+  font-size: 40px;
+  color: black;
+}
+footer .fondo_footer .titulo_footer h3 {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+footer .fondo_footer .titulo_footer .servicios_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  max-width: 670px;
+  margin: 0 auto;
+}
+footer .fondo_footer .titulo_footer .servicios_footer li a {
+  color: black;
+  font-family: "Heebo", sans-serif;
+}
+footer .fondo_footer .titulo_footer p {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-family: "Heebo", sans-serif;
+}
+
+@media (min-width: 480px) {
+  .titulo_footer h3 {
+    font-size: 30px;
+  }
+  .servicios_footer li a {
+    font-size: 20px;
+  }
+  .iconos_footer li a .bi {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .titulo_footer h3 {
+    font-size: 40px;
+  }
+  .iconos_footer li a .bi {
+    font-size: 60px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

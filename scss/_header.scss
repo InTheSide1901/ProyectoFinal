@@ -1,0 +1,201 @@
+@mixin tablet {
+    @media (min-width: 480px) {
+        @content;
+    }
+} 
+@mixin deskop {
+    @media (min-width: 768px) {
+        @content
+    }
+}
+
+
+body {
+    header {
+        background-image: url(../img/fondo-superior.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;         
+        height: 290px;
+        border-bottom: 5px solid #9f9f9f;
+        .logo_barra {
+            a {
+                .logotipo_sony {
+                    width: 77px;
+                    height: 74px;
+                }
+            }
+        }
+        .titulo {
+            text-align: center;
+            padding: 15px 0;
+            color: white;
+            font-size: 30px;
+        }
+        .logo_barra {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 10px;
+            max-width: 1300px;
+            margin: 0 auto;
+            img {
+                margin-right: 15px;
+            }
+            input {
+                min-height: 50px;
+                padding-left: 5px;
+                min-width: 205px;
+                width: 100%;
+                max-width: 650px;
+                border-radius: 15px;
+                background-color: #d9d9d9;
+            }
+            a {
+                color: white;
+            }
+        }
+        .menu_acceder_registrarse {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            margin: 10px 0;
+            .acceder_registrarse {
+                width: 220px;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    margin-left: 25px;
+                    font-size: 22px;
+                    color: black;
+                    background-color: #d9d9d9;
+                    padding: 10px 5px;
+                    margin: 30px 0;
+                    border-radius: 15px;
+                    font-family: $letra1-font;
+                }
+            }
+            .abrir_menu {
+                font-size: 30px;
+                width: 70px;
+                height: 50px;
+                border-radius: 10px;
+                background-color: #DD046F;
+                color: white;
+                cursor: pointer;
+            }
+            .menu_mobile {
+                .menu_mobile_header {
+                    .cerrar_menu {
+                        font-size: 30px;
+                        width: 70px;
+                        height: 50px;
+                        border-radius: 10px;
+                        background-color: $rosa;
+                        color: white;
+                        cursor: pointer;
+                        display: none;
+                    }
+                    .cerrar_menu {
+                        display: block;
+                        position: absolute;
+                        left: 10px;
+                        top: 215px
+                    }
+                }
+            }
+            .disabled {
+                display: none;
+            }
+            .menu_mobile {
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+            }
+            .disabled {
+                display: none;
+            }
+            .menu_mobile {
+                .menu_mobile_nav {
+                    position: absolute;
+                    background-color: $rosa;
+                    left: 0;
+                    top: 290px;
+                    right: 0;
+                    bottom: auto;
+                    .menu_mobile_nav1 {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                       li {
+                        border: 1px solid white;
+                        a {
+                            display: block;
+                            padding: 20px;
+                            color: white;
+                            font-size: 25px;
+                            font-family: $letra1-font;
+                        }
+                       }
+                    }
+                }
+                .disabled {
+                    display: none;
+                }
+            }
+        }
+        .menu_deskop {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 1320px;
+                margin: 30px auto;
+                padding: 0 20px;
+                li {
+                    a {
+                        background-color: #DD046F;
+                        padding: 15px 8px;
+                        border-radius: 20px;
+                        color: white;
+                        font-family: $letra1-font;
+                    }
+                }
+            }
+        }
+        .menu_acceder_registrarse {
+            display: flex;
+            @include deskop {
+                display: none;
+            }
+        }
+        .menu_deskop {
+            display: none;
+            @include deskop {
+                display: flex;
+            }
+        }
+        .logo_barra {
+            div {
+                a {
+                    display: none;
+                    background-color: #d9d9d9;
+                    color: black;
+                    margin-left: 15px;
+                    padding: 15px 10px;
+                    border-radius: 10px;
+                    @include deskop {
+                        display: flex;
+                    }
+                }
+            }
+            .botones_de_acceso_header {
+                display: flex;
+            }
+            @include deskop {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+}

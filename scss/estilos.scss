@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Mukta&family=Roboto+Condensed&family=Staatliches&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$rosa: #DD046F;
+$letra1-font: 'Heebo', sans-serif;
+$letra2-font: 'Mukta', sans-serif;
+$letra3-font: 'Roboto Condensed', sans-serif;
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* fondo header y navegacion ¨*/
+
+/* fondo header y navegacion ¨*/
+
+@import 'header';
+
+/*logotipo*/
+
+
+/*union de logotipo y barra buscadora*/
+/*botones de acceder y registrarse*/
+/*menu para el mobile*/
+
+
+/*icono de menu para abrirlo*/
+
+/*icono de menu para cerrarlo*/
+
+
+
+/*esto sera el contenido principal de la pagina*/
+@import 'contenido_principal';
+/*este sitio web es para la categoria todos nuestros juegos*/
+
+@import 'todos-nuestros-juegos';
+
+
+/*esta seccion sera para la pagina web de locales*/
+
+@import 'locales';
+
+/* En esta seccion tendremos la pagina de juegos mas recomendados*/
+
+@import 'recomendados';
+
+/* aca escribiremos el codigo para la parte de contactanos */
+
+@import 'contactanos';
+
+
+/* aca vamos a poner la seccion de acceder de la pagina web*/
+
+@import 'acceder';
+
+/* aca sera la pagina de registro de usuario */
+
+@import 'registrarse';
+
+
+@import 'footer';
+
+
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba responsiva</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titulo">
+            <h1>Gaming</h1>
+        </div>
+        <div class="logo_barra">
+            <a href="./index.html"><img class="logotipo_sony" src="./img/verdadero logo-sony.png" alt="logotipo"></a>
+            <input type="search" placeholder="Buscar">
+            <div class="botones_de_acceso_header">
+                <a href="./sitiosweb/acceder.html">Acceder</a>
+                <a href="./sitiosweb/registrarse.html">Registrarse</a>  
+            </div>  
+        </div>
+        <div class="menu_acceder_registrarse">
+            <button class="abrir_menu" id="abrir_menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="menu_mobile disabled" id="menu_mobile">
+                <div class="menu_mobile_header">
+                    <button class="cerrar_menu" id="cerrar_menu">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="menu_mobile_nav">
+                    <ul class="menu_mobile_nav1">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sitiosweb/todoslosjuegos.html">Todos nuestros juegos</a></li>
+                        <li><a href="./sitiosweb/categorias.html">Categorias</a></li>
+                        <li><a href="./sitiosweb/locales.html">Nuestros Locales</a></li>
+                        <li><a href="./sitiosweb/recomendados.html">Mas recomendados</a></li>
+                        <li><a href="./sitiosweb/contactanos.html">Contactanos</a></li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="acceder_registrarse">
+                <a href="./sitiosweb/acceder.html">Acceder</a>
+                <a href="./sitiosweb/registrarse.html">Registrarse</a>
+            </div>
+        </div>
+            <div class="menu_deskop">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sitiosweb/todoslosjuegos.html">Todos nuestros juegos</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="./sitiosweb/locales.html">Nuestros Locales</a></li>
+                    <li><a href="./sitiosweb/recomendados.html">Mas recomendados</a></li>
+                    <li><a href="./sitiosweb/contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+    </header>
+    <main class="fondo_contenido_principal">
+        <section id="conteitemcarrusel">
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-1">
+                    <a href="#"><img src="./img/mortal-kombat-11-ultimate.jpg" alt="mortalk11"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-10"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-2"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-2">
+                    <a href="#"><img src="./img/king-of-fighter-destacado.jpg" alt="king"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-1"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-3"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-3">
+                    <a href="#"><img src="./img/ghost-tsushima-destacado.jpg" alt="ghost"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-2"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-4"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-4">
+                    <a href="#"><img src="./img/dragon-ball-fighterz-destacados.jpg" alt="dragon"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-3"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-5"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-5">
+                    <a href="#"><img src="./img/resident-evil-4-recomendados.png" alt="resident"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-4"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-6"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-6">
+                    <a href="#"><img src="./img/tekken-7-destacados.jpg" alt="tekken"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-5"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-7"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-7">
+                    <a href="#"><img src="./img/The-Last-of-Us.jpg" alt="thelastofus"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-6"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-8"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-8">
+                    <a href="#"><img src="./img/wwe-2k23-generacion-xbox.jpg" alt="mortalk11"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-7"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-9"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-9">
+                    <a href="#"><img src="./img/Crash-Bandicoot-4-1.jpg" alt="crash"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-8"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-10"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+    
+            <div class="itemcarrusel">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-10">
+                    <a href="#"><img src="./img/horizon-full.png" alt="horizon"></a>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#tarjetacarrusel-9"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#tarjetacarrusel-1"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="fondo_puntos_paginas">
+            <div class="titulo_contenido_principal">
+                <h3>¡Lo mas comprado!</h3>
+            </div>
+            <ul class="puntos_paginas">
+                <li><a href="#tarjetacarrusel-1"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-2"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-3"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-4"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-5"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-6"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-7"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-8"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-9"><i class="bi bi-circle"></i></a></li>
+                <li><a href="#tarjetacarrusel-10"><i class="bi bi-circle"></i></a></li>
+            </ul>
+        </section>
+        <section class="seccion_de_juegos_de_luchas">
+            <div class="grid_juego_de_luchas">
+                <div class="titulo_juego_de_luchas">
+                    <h3><a href="#">¡Lo mas destacado en juegos de luchas</a></h3>
+                </div>
+                <div class="contenido_juego_de_luchas">
+                    <a href="#"><img src="./img/king-of-fighter-destacado.jpg" alt="kingof"></a>
+                    <a href="#"><img src="./img/mortal-kombat-11-destacado.jpg" alt="mortko11"></a>
+                    <a href="#"><img src="./img/dragon-ball-fighterz-destacados.jpg" alt="dbzff"></a>
+                    <a href="#"><img src="./img/tekken-7-destacados.jpg" alt="tekkenn7"></a>
+                    <a href="#"><img src="./img/mortal-kombat-1-3036302.jpg" alt="mortalkombat1"></a>
+                    <a href="#"><img src="./img/soulcalibur-vi-key-art-en-01-21july2.jpg" alt="calibur"></a>
+                </div>
+                <div class="titulo_ofertas_imperdibles">
+                    <h3><a href="#">¡¡¡Ofertas imperdibles!!!</a></h3>
+                </div>
+            </div>
+        </section>
+    </main>  
+<footer>
+    <div class="fondo_footer">
+        <ul class="iconos_footer">
+            <li><a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+        <div class="titulo_footer">
+            <h3>Gaming</h3>
+            <ul class="servicios_footer">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy police</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <p>2023°Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

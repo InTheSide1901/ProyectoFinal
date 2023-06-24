@@ -1,0 +1,67 @@
+.fondo_contenido_principal_locales {
+    background-image: url(../img/fondo-inferior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 20px 10px;
+    h2 {
+        color: white;
+        text-align: center;
+        margin: 30px auto;
+        font-family: $letra2-font;
+    }
+    .fondo_locales {
+        background-color: #3c3c3c;
+        padding: 20px 10px;
+        border-radius: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        .titulo_encabezado_locales {
+            h3 {
+                color: white;
+                font-family: $letra2-font;
+            }
+            p {
+                color: white;
+                font-family: $letra2-font; 
+            }
+        }
+        .region_locales {
+            margin: 20px auto;
+            h3 {
+                color: white;
+                font-family: $letra2-font;
+            }
+            input {
+                width: 100%;
+                border-radius: 10px;
+                height: 45px;
+                padding-left: 10px;
+            }
+        }
+        .local_locales {
+            margin: 20px auto;
+            h3 {
+                color: white;
+                font-family: $letra2-font;
+            }
+            input {
+                width: 100%;
+                border-radius: 10px;
+                height: 45px;
+                padding-left: 10px;
+            }
+        }
+        .mapa_locales {
+            iframe {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 480px) {
+    .fondo_contenido_principal_locales h2 {
+        font-size: 40px;
+    }
+}
